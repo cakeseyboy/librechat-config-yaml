@@ -1557,3 +1557,14 @@ endpoints:
       summaryModel: "grok-beta"
       forcePrompt: false
       modelDisplayLabel: "Grok"
+
+endpoints:
+  agents:
+    recursionLimit: 50       # Adjusts how deep the agent's processing can go
+    disableBuilder: false    # Enables the agent builder interface in the UI
+    capabilities:
+      - "execute_code"
+      - "file_search"
+      - "actions"
+      - "tools"
+
